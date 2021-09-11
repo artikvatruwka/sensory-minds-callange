@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { generateBingoField } from "../../gameHelpers";
+import React from "react";
 import BingoField from "../BingoField";
 import FogBackground from "../FogBackground";
 import "./styles.css";
