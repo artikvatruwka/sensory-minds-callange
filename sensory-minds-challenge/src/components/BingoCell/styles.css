@@ -1,0 +1,69 @@
+@keyframes WinningGlow {
+  0% {
+    box-shadow: 0 0 100px rgba(128, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 100px 10px rgba(128, 255, 255, 1);
+  }
+  100% {
+    box-shadow: 0 0 100px rgba(128, 255, 255, 0);
+  }
+}
+
+.bingo-cell {
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+  border: 1px solid #ffffff;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+
+.bingo-cell__wrapper--win-outline {
+  animation: WinningGlow 5s infinite ease-in-out;
+}
+
+@media screen and (min-width: 370px) {
+  .bingo-cell {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .bingo-cell {
+    font-size: 18px;
+  }
+}
+
+.bingo-cell__image {
+  width: 100%;
+}
+
+.bingo-cell__wrapper {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  padding-top: 100%;
+}
+
+.bingo-cell--checked {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 100px rgb (121, 249, 255);
+}
+.bingo-cell:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+.bingo-cell:hover,
+.bingo-cell--checked:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.bingo-cell--center {
+  cursor: default;
+}

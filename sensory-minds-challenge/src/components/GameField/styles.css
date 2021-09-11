@@ -1,0 +1,16 @@
+.game-field {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-field__content {
+  background: #000000;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
